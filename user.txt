@@ -7,10 +7,10 @@ fun test() {
         val list = listOf(1,2,3,4,5,6,7,8,9,10)
         val toList = list.asSequence().filter {
             println("filter$it")
-            it > 3
+            it > 5
         }.map {
             println("map$it")
-            it * 2
+            it * 6
         }.toList()
         println(toList)
     }
