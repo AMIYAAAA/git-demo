@@ -21,5 +21,6 @@ open class GenericsToken<T> {
             val superclass = this.javaClass.genericSuperclass as ParameterizedType
 
             type = superclass.actualTypeArguments[0]
+	type = superclass.actualTypeArguments[1]
         }
     }
