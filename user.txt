@@ -14,3 +14,8 @@ fun test() {
         }.toList()
         println(toList)
     }
+    inner class ClothTypeViewHolder(view: View): RecyclerView.ViewHolder(view) {
+        val clickArea: View = view.findViewById(R.id.clothTypeContainer)
+        val text: TextView = view.findViewById(R.id.clothTypeText)
+        val pic: ImageView = view.findViewById(R.id.clothTypePic)
+    }
